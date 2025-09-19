@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; 
 
 function Header() {
   const [opacity, setOpacity] = useState(100);
@@ -19,7 +20,6 @@ function Header() {
       style={{ opacity: opacity / 100 }}
     >
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo */}
         <h1 className="text-2xl font-bold text-pink-600">GourmetOn 🧁🍪</h1>
 
         {/* Menu desktop */}
@@ -55,12 +55,13 @@ function Header() {
               </a>
             </li>
             <li>
-              <a
-                href="#sobremesas"
+              {/* Link para página Produtos */}
+              <Link
+                to="/produtos"
                 className="hover:text-pink-600 transition-colors"
               >
-                Sobremesas
-              </a>
+                Produtos
+              </Link>
             </li>
             <li>
               <a
@@ -155,13 +156,13 @@ function Header() {
               </a>
             </li>
             <li>
-              <a
-                href="#sobremesas"
+              <Link
+                to="/produtos"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-pink-600 transition-colors"
               >
                 Sobremesas
-              </a>
+              </Link>
             </li>
             <li>
               <a
