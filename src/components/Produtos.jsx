@@ -7,8 +7,8 @@ function Produtos() {
     const fetchDoces = async () => {
       try {
         const response = await fetch(
-          "https://api.spoonacular.com/recipes/random?number=6&tags=dessert&apiKey=9c26c285d09d48c1b53c620fa11c99af"
-        );
+  `https://api.spoonacular.com/recipes/random?number=6&tags=dessert&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`
+);
         const data = await response.json();
         setDoces(data.recipes);
       } catch (error) {
