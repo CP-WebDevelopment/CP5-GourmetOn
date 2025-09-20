@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
 function Header() {
@@ -35,7 +34,6 @@ function Header() {
           <a href="#apresentacao" className={linkBase}>Apresentação</a>
           <a href="#funcionalidades" className={linkBase}>Funcionalidades</a>
           <a href="#depoimentos" className={linkBase}>Depoimentos</a>
-          <Link to="/produtos" className={linkBase}>Produtos</Link>
           <a href="#contato" className={linkBase}>Contato</a>
         </nav>
 
@@ -57,7 +55,6 @@ function Header() {
           <a href="#apresentacao" onClick={() => setIsOpen(false)} className={linkBase}>Apresentação</a>
           <a href="#funcionalidades" onClick={() => setIsOpen(false)} className={linkBase}>Funcionalidades</a>
           <a href="#depoimentos" onClick={() => setIsOpen(false)} className={linkBase}>Depoimentos</a>
-          <Link to="/produtos" onClick={() => setIsOpen(false)} className={linkBase}>Produtos</Link>
           <a href="#contato" onClick={() => setIsOpen(false)} className={linkBase}>Contato</a>
         </nav>
       </div>

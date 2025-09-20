@@ -23,5 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# ENCONDENDO CHAVE API
-.env
