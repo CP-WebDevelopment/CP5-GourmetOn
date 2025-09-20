@@ -1,23 +1,23 @@
+// src/components/Footer.jsx
 import SocialImage from "../assets/midias.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-pink-300 text-black py-3 mt-auto">
-      <div className="container mx-auto px-4 flex flex-col items-center gap-2">
-
-        
+    <footer className="bg-[#822626] text-white py-6 mt-auto">
+      <div className="container mx-auto px-4 flex flex-col items-center gap-3">
+       
         <div className="flex items-center gap-2">
-          <h1 className="text-lg md:text-xl font-bold">
+          <h1 className="text-lg md:text-xl font-extrabold tracking-tight">
             GourmetOn
           </h1>
         </div>
 
-        {/* Frase */}
-        <p className="text-center text-black text-xs md:text-sm max-w-sm leading-snug">
+       
+        <p className="text-center text-white/85 text-xs md:text-sm max-w-sm leading-snug">
           Entre em contato pelo email: gourmeton@gmail.com
         </p>
 
-        {/* Redes sociais */}
+      
         <div>
           <img
             src={SocialImage}
@@ -27,8 +27,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <p className="text-[10px] md:text-xs text-black/80 text-center">
-          &copy; 2025 Todos os direitos reservados. Trabalho acadêmico Fiap.
+        <p className="text-[10px] md:text-xs text-white/75 text-center">
+          &copy; {new Date().getFullYear()} Todos os direitos reservados. Trabalho acadêmico Fiap.
         </p>
       </div>
     </footer>
