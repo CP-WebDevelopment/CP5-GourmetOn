@@ -7,7 +7,7 @@
 
 ## Descrição do Projeto
 
-O **GourmetOn** é uma landing page e aplicação web focada em delivery de pratos gourmet, com apresentação de receitas, destaques do cardápio, funcionalidades do app e newsletter para cadastramento de e-mails. O projeto utiliza dados reais de receitas fornecidos pela [TheMealDB API](https://www.themealdb.com/api.php).
+O **GourmetOn** é uma landing page e aplicação web focada em delivery de pratos gourmet, destaques do cardápio, funcionalidades do app e newsletter para cadastramento de e-mails. O projeto utiliza dados reais de receitas fornecidos pela [TheMealDB API](https://www.themealdb.com/api.php).
 
 O objetivo acadêmico do projeto é demonstrar o uso de **React.js**, **API externa**, **hooks**, e técnicas de **front-end moderno**, priorizando experiência do usuário e interface clara.
 
